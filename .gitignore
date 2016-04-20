@@ -1,0 +1,7 @@
+*.pyc
+
+# Virtual Environment
+.env
+
+# Database
+db.sqlite3

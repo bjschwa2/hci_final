@@ -1,0 +1,19 @@
+{% extends 'rockclimb/base.html' %}
+{% block content %}
+{% load staticfiles %}
+<div class="container">
+<div class="page-header">
+    <h3>Create Climb</h3>
+</div>
+<div class="row">
+        {% if form.errors %}
+        <div class="alert alert-danger"> {{ form.errors }} </div>
+        {% endif %}
+
+        <form class="form" method="POST" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+            <button class="btn btn-primary" type="submit">Create Climb</button>
+        </form>
+</div>
+{% endblock %}
