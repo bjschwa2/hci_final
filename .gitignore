@@ -5,4 +5,3 @@ staticfiles
 .env
 
 # Database
-db.sqlite3
