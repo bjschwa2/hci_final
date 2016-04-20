@@ -9,7 +9,6 @@ urlpatterns = [
     url(r'^create_climb/$', ClimbCreateView.as_view(), name='create_climb'),
     url(r'^(?P<climb>\d+)/delete_climb/$', ClimbDeleteView.as_view(), name='delete_climb'),
 
-
     # Account login, logout, register account
     url(r'^accounts/login/$', login, name='login'),
     url(r'^accounts/logout/$', logout, {'next_page': "/"}, name="logout"),
