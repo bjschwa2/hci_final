@@ -2,31 +2,34 @@
 {% block content %}
 {% load staticfiles %}
 
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
+
 <div class="cover-container text-center">
-<div class="masthead clearfix">
+    <div class="masthead clearfix">
 
-          <div class="inner cover">
+          <div class="inner cover center-block">
             <h1 class="cover-heading">CRUX</h1>
-            <p class="lead">Keep track of your climbs. Pass the crux. </p>
+            <h3>Keep track of your climbs. Pass the crux. </h3>
             <p class="lead">
-              <a href={% url 'login' %} class="btn btn-lg btn-default">Login</a>
-              <a href={% url 'dashboard' %} class="btn btn-lg btn-default">Dashboard</a>
+              <a href="#" class="btn btn-lg btn-default">Sign Up</a>
             </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Project for <a href="http://www4.ncsu.edu/~stamant/454/">CSC 454</a>, by 
-	   <a href="https://github.com/bjschwa2">Bradley Schwarz</a>,
-	   <a href="https://github.com/Zioep">Codey Wysocki</a>,
-              <a href="https://github.com/djstein">Dylan Stein</a>,
-              <a href="https://github.com/henoknows">Seth Heno</a>.</p>
-            </div>
           </div>
 
         </div>
 
       </div>
 </div>
+
+<div class="row text-center">
+	<div class="col-xs-12">
+		<h4>Project for <a href="http://www4.ncsu.edu/~stamant/454/">CSC 454</a>, by 
+		<a href="https://github.com/bjschwa2">Bradley Schwarz</a>,
+		<a href="https://github.com/Zioep">Codey Wysocki</a>,
+		<a href="https://github.com/djstein">Dylan Stein</a>,
+		<a href="https://github.com/henoknows">Seth Heno</a>.
+		</h4>
+	</div>
+</div>
+
 
 {% endblock %}
